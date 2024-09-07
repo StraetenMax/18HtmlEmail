@@ -1,120 +1,112 @@
 <!DOCTYPE html>
-import { inline } from "@css-inline/css-inline";
-
-var inlined = inline(
-  `
     <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML Email Template</title>
-        <style data-css-inline="keep">
-            @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-        </style>
-        <style>
-            *{
-                margin: 0;
-                border: 0;
-                padding: 0;
-            }
-            body{
-                font-family:'Lato', sans-serif;
-                background-color: #d8dbdb;
-                font-size: 18px;
-                max-width:700px;
-                margin:0 auto;
-                padding: 2%;
-                color: #565859;
-            }
-            .wrapper{
-                background-color: #f6faff;
-                border-top: 10px solid #3db5a0;
-                box-shadow: 0 0 10px #666666;
-                border-radius: 5px;
-            }
-            img{
-                max-width: 100%;
-            }
-            .logo{
-                width: 100%;
-                padding: 1% 0px;
-                text-align: center;
-            }
-            .logo img{
-                max-width: 250px;
-            }
-            h2{
-                letter-spacing: 1px;
-                padding-bottom: 15px;
-            }
-            p{
-                line-height: 28px;
-                padding-bottom: 25px;
-            }
-            .btn{
-                background: #3db5a0;
-                color: #ffffff;
-                text-decoration: none;
-                font-weight: 700;
-                padding:10px 14px;
-                border-radius: 8px;
-                letter-spacing: 2px;
-            }
-            .line{
-                clear: both;
-                height: 1px;
-                background-color: #fe6b58;
-                margin: 15px auto 10px;
-                width: 98%;
-            }
-            .three-col{
-                margin:10px 0 26px;
-                float:left;
-                width: 29.3%;
-                padding: 5% 2%;
-                text-align: center;
-            }
-            .three-col img{
-                border-radius: 50%;
-                max-width: 135px;
-                padding: 2%;
-            }
-            .two-col{
-                margin: 10px 0 26px;
-                float: left;
-                width: 46%;
-                padding: 5% 2%;
-            }
-            .social{
-                width: 96%;
-                text-align: center;
-                list-style-type: none;
-                padding: 2%;
-                margin: 20px 0 5px;
-            }
-            .social li{
-                display: inline;
-            }
-            .social img{
-                max-width: 40px;
-            }
-            .contact{
-                text-align: center;
-                padding-bottom: 1%;
-            }
-        </style>
-        <style data-css-inline="keep">
-            @media (max-width: 500){
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HTML Email Template</title>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+                *{
+                    margin: 0;
+                    border: 0;
+                    padding: 0;
+                }
                 body{
-                    padding: 1%;
+                    font-family:'Lato', sans-serif;
+                    background-color: #d8dbdb;
+                    font-size: 18px;
+                    max-width:700px;
+                    margin:0 auto;
+                    padding: 2%;
+                    color: #565859;
                 }
-                .three-col, .two-col{
+                .wrapper{
+                    background-color: #f6faff;
+                    border-top: 10px solid #3db5a0;
+                    box-shadow: 0 0 10px #666666;
+                    border-radius: 5px;
+                }
+                img{
+                    max-width: 100%;
+                }
+                .logo{
+                    width: 100%;
+                    padding: 1% 0px;
+                    text-align: center;
+                }
+                .logo img{
+                    max-width: 250px;
+                }
+                h2{
+                    letter-spacing: 1px;
+                    padding-bottom: 15px;
+                }
+                p{
+                    line-height: 28px;
+                    padding-bottom: 25px;
+                }
+                .btn{
+                    background: #3db5a0;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 700;
+                    padding:10px 14px;
+                    border-radius: 8px;
+                    letter-spacing: 2px;
+                }
+                .line{
+                    clear: both;
+                    height: 1px;
+                    background-color: #fe6b58;
+                    margin: 15px auto 10px;
+                    width: 98%;
+                }
+                .three-col{
+                    margin:10px 0 26px;
+                    float:left;
+                    width: 29.3%;
+                    padding: 5% 2%;
+                    text-align: center;
+                }
+                .three-col img{
+                    border-radius: 50%;
+                    max-width: 135px;
+                    padding: 2%;
+                }
+                .two-col{
+                    margin: 10px 0 26px;
+                    float: left;
+                    width: 46%;
+                    padding: 5% 2%;
+                }
+                .social{
                     width: 96%;
-                    margin: 0 0 15px!important;
+                    text-align: center;
+                    list-style-type: none;
+                    padding: 2%;
+                    margin: 20px 0 5px;
                 }
-            }
-        </style>
+                .social li{
+                    display: inline;
+                }
+                .social img{
+                    max-width: 40px;
+                }
+                .contact{
+                    text-align: center;
+                    padding-bottom: 1%;
+                }
+                @media (max-width: 500){
+                    body{
+                        padding: 1%;
+                    }
+                    .three-col, .two-col{
+                        width: 96%;
+                        margin: 0 0 15px!important;
+                    }
+                }
+            </style>
     </head>
     <body>
         <div class="wrapper">
@@ -175,6 +167,4 @@ var inlined = inline(
             </p>
         </div>
     </body>
-    </html>
- `,
-);
+</html>
